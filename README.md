@@ -16,8 +16,12 @@ $ git clone https://github.com/andredlam/dotfiles.git && cd dotfiles && ./sync.s
 
 ### For Ubuntu
 ```
-1. sudo apt install linuxbrew-wrapper
-
+1. Prerequisite:
+$ sudo apt install linuxbrew-wrapper
+$ sudo add-apt-repository "deb http://archive.ubuntu.com/ubuntu $(lsb_release -sc) main universe"
+$ sudo apt-get remove vim-common 
+$ sudo apt-get clean && sudo apt-get purge 
+$ sudo apt-get update && sudo apt-get install vim
 
 2. Go to https://github.com/rupa/z and clone z
 $ git clone https://github.com/rupa/z.git
